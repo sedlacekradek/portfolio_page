@@ -1,0 +1,8 @@
+Flask==2.2.2
+Flask_WTF==1.0.1
+python-dotenv==0.21.0
+Werkzeug==2.2.2
+WTForms==3.0.1
+gunicorn
+psycopg2
+email_validator

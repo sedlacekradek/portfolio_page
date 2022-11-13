@@ -1,0 +1,24 @@
+<!-- Masthead-->
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Avatar Image-->
+        <!--if form successfully submitted-->
+        {% if alert %}
+        <div class="bubble bubble-bottom-left">
+            Message sent successfully.<br> Thank you!
+        </div>
+        {% endif %}
+        <img class="masthead-avatar mb-5" src="{{ url_for ('static', filename= 'images/avatar.png') }}"/>
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-0">RADEK SEDLÁČEK</h1>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Masthead Subheading-->
+        <p class="masthead-subheading font-weight-light mb-0">English Enthusiast - Logistics Professional - Self-taught
+            Developer</p>
+    </div>
+</header>

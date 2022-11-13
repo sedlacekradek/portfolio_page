@@ -1,0 +1,87 @@
+<!-- Portfolio Section-->
+<section class="page-section portfolio" id="portfolio">
+    <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Portfolio Grid Items-->
+        <div class="row justify-content-center">
+            <!-- Portfolio Item 1-->
+            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4"
+                            hx-get="/modal/4"
+                            hx-trigger="click"
+                            hx-swap="outerHTML"
+                            hx-target="#video4">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white">
+                            Bug Hunter<br><br>
+                            <small>Project Management Tool<br>
+                                with Flask and SQLAlchemy</small>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="{{ url_for ('static', filename= 'images/hedgehog.jpg') }}"/>
+                </div>
+            </div>
+            <!-- Portfolio Item 2-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1"
+                            hx-get="/modal/1"
+                            hx-trigger="click"
+                            hx-swap="outerHTML"
+                            hx-target="#video1">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white">
+                            FaceGuesser<br><br>
+                            <small>Image recognition<br>
+                                with machine learning</small>
+
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="{{ url_for ('static', filename= 'images/camera.jpg')}}"/>
+                </div>
+            </div>
+            <!-- Portfolio Item 3-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3"
+                            hx-get="/modal/3"
+                            hx-trigger="click"
+                            hx-swap="outerHTML"
+                            hx-target="#video3">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white">
+                            WhichIsOlder<br><br>
+                            <small>Quiz app<br>
+                                with Flask and HTMX</small>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="{{ url_for ('static', filename= 'images/computer.jpg') }}"/>
+                </div>
+            </div>
+            <!-- Portfolio Item 4-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2"
+                            hx-get="/modal/2"
+                            hx-trigger="click"
+                            hx-swap="outerHTML"
+                            hx-target="#video2">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white">
+                            IntaClone<br><br>
+                            <small>Instagram Clone<br>
+                                with Flask and SQLAlchemy</small>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="{{ url_for ('static', filename= 'images/otter.jpg') }}"/>
+                </div>
+            </div>
+            <!-- ---- -->
+
+        </div>
+    </div>
+</section>
